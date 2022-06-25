@@ -1,3 +1,4 @@
+$light-gray: #FCFCFC;
 $text: #000000;
 $white: #ffffff;
 $gray: #C6C6C6;
@@ -7,6 +8,273 @@ $biege: #EBA144;
 $corall: #C7563D;
 $violet: #561F51;
 $yellow: #FFCD00;
-$yellow-dark: #FFB300;
 $blue-light: #B3E3EB;
+$yellow-dark: #FFB300;
 $blue: #80E0EF;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $text;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+// header
+.top__header {
+    background-color: $light-gray;
+    height: 52px;
+}
+
+.top__header-style {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    padding: 0;
+}
+
+.nav li {
+    list-style: none;
+    padding-right: 35px;
+}
+
+.nav li:last-child {
+    padding-right: 0;
+}
+
+.city__style {
+    display: flex;
+}
+
+.city__style p {
+    padding-left: 10px;
+}
+
+.nav__item a {
+    position: relative;
+    cursor: pointer;
+}
+
+.nav__item a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    width: 0;
+    height: 1.5px;
+    background-color: $orange;
+    transition: width 0.3s;
+}
+
+.nav__item a:hover {
+    color: $orange;
+    transition: 0.3s;
+}
+
+.nav__item a:hover:after {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 1.5px;
+    background-color: $orange;
+    transition: width 0.3s;
+}
+
+.bot__header-style {
+    display: flex;
+    justify-content: space-between;
+    max-height: 92px;
+}
+
+.bot__header-item {
+    margin: 27px 0 0 24px;
+    max-height: 38px;
+}
+
+.bot__header-item img {
+    margin-right: 10px;
+}
+
+.bot__header-item a {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.bot__header-item p {
+    margin: 0;
+    color: $gray;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.catalog {
+    width: 161px;
+    height: 41px;
+    background-color: $orange;
+    display: block;
+}
+
+.df {
+    display: flex;
+}
+
+.logo a {
+    float: left;
+    max-height: 92px;
+}
+
+.logo img {
+    margin: 25px auto;
+}
+
+.search__img {
+    max-width: 48px;
+    max-height: 48px;
+    margin: 22px auto;
+}
+
+// end header
+
+// notes
+
+.notes {
+    background-color: $orange;
+    height: 65px;
+}
+
+.dfsb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dfsb p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: $white;
+}
+
+.dfsb img {
+    margin: auto 0;
+}
+
+// end notes
+
+// menu
+
+.menu {
+    height: 872px;
+    width: 100%;
+    background: url(/img/background.svg) center no-repeat;
+}
+
+.menu__item {
+    position: relative;
+    min-height: 153px;
+}
+
+.pink {
+    background-color: $pink;
+    grid-area: 1 / 1 / 4 / 4;
+}
+
+.orange {
+    background-color: $orange;
+    grid-area: 1 / 4 / 4 / 7;
+}
+
+.biege {
+    background-color: $biege;
+    grid-area: 1 / 7 / 6 / 10;
+}
+
+.corall {
+    background-color: $corall;
+    grid-area: 4 / 1 / 7 / 4;
+}
+
+.violet {
+    background-color: $violet;
+    grid-area: 4 / 4 / 9 / 7;
+}
+
+.yellow {
+    background-color: $yellow;
+    grid-area: 6 / 7 / 9 / 10;
+}
+
+.blue-light {
+    background-color: $blue-light;
+    grid-area: 7 / 1 / 12 / 4;
+}
+
+.yellow-dark {
+    background-color: $yellow-dark;
+    grid-area: 9 / 4 / 12 / 7;
+}
+
+.blue {
+    background-color: $blue;
+    grid-area: 9 / 7 / 12 / 10;
+}
+
+.circle {
+    position: absolute;
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: $white;
+}
+
+.banner__info{
+    text-align: center;
+}
+.banner__info h1{
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 70px;
+    margin: 0;
+    padding-top: 53px;
+}
+
+.banner__info span {
+    color: $orange;
+}
+
+.banner__info p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    margin: 0;
+    padding-top: 84px;
+}
+
+.main__menu{
+    max-height: 564px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-top: 81px;
+}
+
+// end menu

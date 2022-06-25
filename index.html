@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,37 +8,128 @@
     <title>Печкатека</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/icon.svg">
 </head>
+
 <body>
-    <div class="page">
-        <div class="wrapper">
-            <header>
-                <div class="top-header">
-                    <nav>
-                        <ul class="nav">
-                            <li class="nav-item">О нас</li>
-                            <li class="nav-item">Документация</li>
-                            <li class="nav-item">Контакты</li>
-                            <li class="nav-item">Наши партнеры</li>
-                        </ul>
-                    </nav>
-                    <div class="top-city">
-                        <div class="top-city_style">
-                            <img src="img/place.svg" alt="arrow">
-                            <p>Н. Новгород</p>
+    <header class="header">
+        <div class="top__header">
+            <div class="container top__header-style">
+                <nav>
+                    <ul class="nav">
+                        <li class="nav__item"><a href="#">О нас</a></li>
+                        <li class="nav__item"><a href="#">Документация</a></li>
+                        <li class="nav__item"><a href="#">Контакты</a></li>
+                        <li class="nav__item"><a href="#">Наши партнеры</a></li>
+                    </ul>
+                </nav>
+                <div class="city">
+                    <div class="city__style">
+                        <img src="img/place.svg" alt="place">
+                        <p>Н.Новгород</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bot__header">
+            <div class="container bot__header-style">
+                <div class="df">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="bot__header-item">
+                        <div class="df">
+                            <img src="img/phone.svg" alt="phone">
+                            <div>
+                                <a href="tel:88005553535">+7 (800) 555-35-35</a>
+                                <p>Платный звонок по РФ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bot__header-item">
+                        <div class="df">
+                            <img src="img/mail.svg" alt="mail">
+                            <div>
+                                <a href="mailto:pechkateka@mail.ru">pechkateka@mail.ru</a>
+                                <p>Пн - пт с 9:00 до 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bot__header-item catalog">
+
+                    </div>
+                </div>
+                <div class="df">
+                    <img class="search__img" src="img/search.svg" alt="">
+                    <div class="bot__header-item">
+                        <div class="df">
+                            <img src="img/cart.svg" alt="cart">
+                            <div>
+                                <a href="#">Корзина пуста</a>
+                                <p>Доставка 250р.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="bot-header">
-                    <nav>
-
-                    </nav>
-                </div>
-            </header>
-            <div class="notifications">
-
             </div>
         </div>
-    </div>
+    </header>
+    <section class="notes">
+        <div class="container">
+            <div class="dfsb">
+                <p>Заявки обрабатываются в течение 30 минут</p>
+                <img src="img/plus.svg" alt="plus">
+            </div>
+        </div>
+    </section>
+    <section class="menu">
+        <div class="container">
+            <section class="banner__info">
+                <h1>Артем <span>ептаваю мать,</span> доделай сука дизайн</h1>
+                <p>Доставка по Нижнему Новгороду до вашего дома</p>
+            </section>
+            <div class="main__menu">
+                <div class="menu__item pink">
+                    <div class="dfsb">
+                        <div >
+                            <div class="circle"></div>
+                            <img src="img/pechka.png" alt="product" class="img__item">
+                        </div>
+                        <p class="menu__name">котел отопительный</p>
+                    </div>
+                </div>
+                <div class="menu__item orange">
+
+                </div>
+                <div class="menu__item-big biege">
+
+                </div>
+                <div class="menu__item corall">
+
+                </div>
+                <div class="menu__item violet">
+
+                </div>
+                <div class="menu__item yellow">
+
+                </div>
+                <div class="menu__item blue-light">
+
+                </div>
+                <div class="menu__item yellow-dark">
+
+                </div>
+                <div class="menu__item blue">
+
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
