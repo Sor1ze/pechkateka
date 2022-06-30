@@ -208,7 +208,7 @@ a {
 }
 
 .menu__item-big:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
     z-index: 2;
     box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.2);
 }
@@ -244,6 +244,7 @@ a {
 .pink {
     background-color: $pink;
     grid-area: 1 / 1 / 4 / 4;
+    border-radius: 10px 0 0 0;
 }
 
 .orange {
@@ -254,6 +255,7 @@ a {
 .biege {
     background-color: $biege;
     grid-area: 1 / 7 / 6 / 10;
+    border-radius: 0 10px 0 0;
 }
 
 .corall {
@@ -274,6 +276,7 @@ a {
 .blue-light {
     background-color: $blue-light;
     grid-area: 7 / 1 / 12 / 4;
+    border-radius: 0 0 0 10px;
 }
 
 .yellow-dark {
@@ -284,6 +287,7 @@ a {
 .blue {
     background-color: $blue;
     grid-area: 9 / 7 / 12 / 10;
+    border-radius: 0 0 10px 0;
 }
 
 .circle {
@@ -446,12 +450,17 @@ a {
 //end search
 
 //top-slider
-.slider-inner{
-    margin: 0 -1000px;
+
+.top-slider {
+    overflow: hidden !important;
 }
 
-.slick-slide{
-    margin: 0 1000px;
+.slider-inner {
+    margin: 0 -500px;
+}
+
+.slick-slide {
+    margin: 0 500px;
 }
 
 .slick-slider {
@@ -507,7 +516,7 @@ a {
     position: relative;
     top: 0;
     left: 0;
-
+    overflow: hidden;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -571,6 +580,7 @@ a {
 .slick-arrow.slick-hidden {
     display: none;
 }
+
 /* Arrows */
 .slick-prev,
 .slick-next {
@@ -672,7 +682,7 @@ a {
 .slick-dots {
     position: absolute;
     bottom: -25px;
-
+    visibility: hidden;
     display: block;
 
     width: 100%;
@@ -751,28 +761,28 @@ a {
     color: black;
 }
 
-.slider__item-title{
+.slider__item-title {
     color: $text !important;
     font-size: 50px !important;
     line-height: 60px !important;
     max-width: 475px;
 }
 
-.slider__item-title span{
+.slider__item-title span {
     color: $orange !important;
     font-size: 50px !important;
     line-height: 60px !important;
     margin-bottom: 30px !important;
 }
 
-.slider__text-title{
+.slider__text-title {
     color: $text !important;
     font-size: 20px !important;
     line-height: 25px !important;
     margin-top: 0 !important;
 }
 
-.slider__text{
+.slider__text {
     color: $text !important;
     font-size: 14px !important;
     line-height: 21px !important;
@@ -780,12 +790,12 @@ a {
     max-width: 548px;
 }
 
-.slider-item img{
+.slider-item img {
     margin: 70px 0 0 30px;
     border-radius: 20px;
 }
 
-.slider__btn{
+.slider__btn {
     color: $white;
     background-color: $orange;
     padding: 15px 50px;
@@ -793,18 +803,108 @@ a {
     outline: none;
 }
 
-.slider__cat-style{
+.slider__cat-style {
     border-bottom: 1px solid $gray;
 }
 
-.slider__cat{
+.slider__cat {
     color: $text !important;
     font-size: 14px !important;
     line-height: 21px !important;
-    margin-top: 60px !important; 
+    margin-top: 60px !important;
 }
 
-.slider__cat-active{
+.slider__cat-active {
     color: $orange !important;
 }
+
 //end top-slider
+
+//products
+.product-title {
+    font-size: 35px;
+    line-height: 50px;
+    margin-top: 10px;
+}
+
+.product__img-style {
+    position: relative;
+}
+
+.product__stars {
+    position: absolute;
+    left: 90px;
+    top: 230px;
+}
+
+.product-img:hover {
+    transform: scale(1.15);
+    transition: .4s ease-out;
+}
+
+.product-add {
+    position: absolute;
+    left: 109px;
+}
+
+.slide {
+    max-width: 256px;
+}
+
+.product-name {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.product-about {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+}
+
+#counter {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    padding: 13px;
+    background-color: $light-gray;
+    border: 1px solid $gray;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.button-count{
+    background: transparent;
+    outline: none;
+    border: 0;
+}
+
+.calc__text-style{
+    margin-top: 13px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.price-total{
+    font-size: 10px !important;
+    line-height: 15px !important;
+    color: $text !important;
+    margin: 20px 0 0 0 !important;
+}
+
+.product-price{
+    font-size: 20px !important;
+    line-height: 25px !important;
+    color: $orange !important;
+    margin: 0 !important;
+}
+
+.product-cart-style{
+    margin-top: 16px;
+}
+
+.product-cart-style img{
+    margin-left: 20px;
+}
