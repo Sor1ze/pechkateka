@@ -1,1 +1,16 @@
-$(function(){$(".js-topslider").slick({infinite:!0,speed:600,dots:!0,arrows:!1,autoplay:!0,autoplaySpeed:5e3}),$(".multiple-items").slick({infinite:!0,slidesToShow:4,slidesToScroll:4})});
+$(function () {
+    $('.js-topslider').slick({
+        infinite: true,
+        speed: 600,
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+    });
+});
+$(function () {
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        items: 4,
+    });
+});

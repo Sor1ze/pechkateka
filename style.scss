@@ -803,6 +803,11 @@ a {
     outline: none;
 }
 
+.slider__btn:hover{
+    background-color: $biege;
+    transition: all 0.3s ease 0s;
+}
+
 .slider__cat-style {
     border-bottom: 1px solid $gray;
 }
@@ -822,9 +827,9 @@ a {
 
 //products
 .product-title {
-    font-size: 35px;
-    line-height: 50px;
-    margin-top: 10px;
+    font-size: 35px !important;
+    line-height: 50px !important;
+    color: $text !important;
 }
 
 .product__img-style {
@@ -839,7 +844,7 @@ a {
 
 .product-img:hover {
     transform: scale(1.15);
-    transition: .4s ease-out;
+    transition: all 0.4s ease 0s;
 }
 
 .product-add {
@@ -849,6 +854,7 @@ a {
 
 .slide {
     max-width: 256px;
+    margin: 20px auto;
 }
 
 .product-name {
@@ -907,4 +913,8 @@ a {
 
 .product-cart-style img{
     margin-left: 20px;
+}
+
+.owl-item img{
+    width: auto !important;
 }
