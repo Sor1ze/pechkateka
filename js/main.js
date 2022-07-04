@@ -7,10 +7,9 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 5000,
     });
-});
-$(function () {
     $(".owl-carousel").owlCarousel({
         loop: true,
-        items: 4,
+        items: 3.5,
+        margin: 30,
     });
 });

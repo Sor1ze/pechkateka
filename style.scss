@@ -803,7 +803,7 @@ a {
     outline: none;
 }
 
-.slider__btn:hover{
+.slider__btn:hover {
     background-color: $biege;
     transition: all 0.3s ease 0s;
 }
@@ -881,40 +881,104 @@ a {
     line-height: 21px;
 }
 
-.button-count{
+.button-count {
     background: transparent;
     outline: none;
     border: 0;
 }
 
-.calc__text-style{
+.calc__text-style {
     margin-top: 13px;
     font-size: 20px;
     line-height: 25px;
 }
 
-.price-total{
+.price-total {
     font-size: 10px !important;
     line-height: 15px !important;
     color: $text !important;
     margin: 20px 0 0 0 !important;
 }
 
-.product-price{
+.product-price {
     font-size: 20px !important;
     line-height: 25px !important;
     color: $orange !important;
     margin: 0 !important;
 }
 
-.product-cart-style{
+.product-cart-style {
     margin-top: 16px;
 }
 
-.product-cart-style img{
+.product-cart-style img {
     margin-left: 20px;
 }
 
-.owl-item img{
+.owl-item img {
     width: auto !important;
 }
+
+// news
+.news-slide img {
+    max-width: 301px;
+    min-height: 226px;
+}
+
+.news-title {
+    color: $text;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.news-time {
+    color: $gray;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+}
+
+.news-slide{
+    position: relative;
+    min-height: 350px;
+}
+
+// end news
+// social
+.social{
+    margin-top: 85px;
+}
+.social-title{
+    color: $text !important;
+    font-size: 50px !important;
+    line-height: 60px !important;
+    margin: 0 0 45px 0 !important;
+}
+.social-text{
+    margin: 0 0 40px 0 !important;
+    color: $text !important;
+    font-size: 14px !important;
+    line-height: 21px !important;
+}
+.social-link a{
+    color: $orange !important;
+    font-size: 14px !important;
+    line-height: 21px !important;
+    letter-spacing: 2px !important;
+    margin-right: 75px;
+}
+
+.social-link a:hover{
+    color: $biege;
+    transition: all 0.4s ease 0s;
+}
+
+.social-link a:last-child{
+    margin-right: 0;
+}
+// end social
