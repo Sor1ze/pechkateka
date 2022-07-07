@@ -203,13 +203,13 @@ a {
 
 .menu__item:hover {
     transform: scale(1.15);
-    z-index: 2;
+    z-index: 100;
     box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.2);
 }
 
 .menu__item-big:hover {
     transform: scale(1.15);
-    z-index: 2;
+    z-index: 100;
     box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.2);
 }
 
@@ -943,29 +943,32 @@ a {
     margin: 0;
 }
 
-.news-slide{
+.news-slide {
     position: relative;
     min-height: 350px;
 }
 
 // end news
 // social
-.social{
+.social {
     margin-top: 85px;
 }
-.social-title{
+
+.social-title {
     color: $text !important;
     font-size: 50px !important;
     line-height: 60px !important;
     margin: 0 0 45px 0 !important;
 }
-.social-text{
+
+.social-text {
     margin: 0 0 40px 0 !important;
     color: $text !important;
     font-size: 14px !important;
     line-height: 21px !important;
 }
-.social-link a{
+
+.social-link a {
     color: $orange !important;
     font-size: 14px !important;
     line-height: 21px !important;
@@ -973,12 +976,189 @@ a {
     margin-right: 75px;
 }
 
-.social-link a:hover{
+.social-link a:hover {
     color: $biege;
     transition: all 0.4s ease 0s;
 }
 
-.social-link a:last-child{
+.social-link a:last-child {
     margin-right: 0;
 }
+
 // end social
+// bot-banner
+.banner-text {
+    font-size: 50px;
+    line-height: 60px;
+    color: $text;
+    margin: 0;
+    padding-top: 34px;
+    margin: 0 0 45px 90px;
+}
+
+.bot-banner {
+    background: url('../img/banner.png') center no-repeat;
+    height: 283px;
+    margin-top: 60px;
+}
+
+.banner-btn {
+    margin-left: 90px;
+}
+
+// end bot-banner
+// important
+.important {
+    margin-top: 50px;
+}
+
+.important-text {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    color: $text !important;
+    margin: auto 15px !important;
+}
+
+// end important
+// delivery
+.delivery-content {
+    margin: auto 30px;
+}
+
+.delivery-title {
+    color: $text;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.delivery-text {
+    color: $text;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.delivery-style {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+// end delivery
+// footer
+.copy-text{
+    color: $gray !important;
+    font-size: 14px !important;
+    line-height: 21px !important;
+}
+.footer-content{
+    border-top: 1px solid #C6C6C6;
+    border-bottom: 1px solid #C6C6C6;
+    padding: 60px 0;
+}
+.footer-logo{
+    margin: 30px 0 65px 0 !important;
+}
+.footer-contacts-text{
+    color: $text !important;
+    font-size: 14px !important;
+    line-height: 21px !important;
+    margin: 10px 0;
+}
+.footer-contacts{
+    margin-bottom: 40px;
+}
+.footer-phone{
+    font-size: 20px;
+    line-height: 25px;
+}
+.footer-email{
+    color: $gray !important;
+    font-size: 14px !important;
+    line-height: 21px !important;
+}
+.footer-email a{
+    color: $gray !important;
+    font-size: 14px !important;
+    line-height: 21px !important;
+}
+.footer-social{
+    color: $orange !important;
+    font-size: 14px !important;
+    line-height: 21px !important;
+    letter-spacing: 2px !important;
+    display: block !important;
+}
+.footer-social-block{
+    margin: 55px 0;
+}
+.footer-social-block a:first-child{
+    margin-bottom: 30px;
+}
+.footer-profile a{
+    color: $text !important;
+    font-size: 14px !important;
+    line-height: 21px !important;
+}
+.footer-profile a:last-child {
+    color: $orange !important;
+}
+.footer-profile{
+    color: $text !important;
+    font-size: 14px !important;
+    line-height: 21px !important;
+    margin: auto 10px;
+}
+.footer-nav{
+    max-width: 158px;
+    list-style: none;
+    padding: 0 !important;
+    margin-bottom: 70px !important;
+}
+.footer-category{
+    margin: auto;
+    color: $text;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+.footer-subcategory{
+    color: $gray;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 5px;
+}
+
+.footer-subcategory {
+    position: relative;
+    cursor: pointer;
+}
+
+.footer-subcategory:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1.5px;
+    background-color: $orange;
+    transition: width 0.3s;
+}
+
+.footer-subcategory:hover {
+    color: $orange;
+    transition: 0.3s;
+}
+
+.footer-subcategory:hover:after {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 1.5px;
+    background-color: $orange;
+    transition: width 0.3s;
+}
+// end footer
